@@ -31,6 +31,18 @@
                         </c:forEach>
                     </select>
                 </div>
+                
+                <div class="m-3">
+                     <c:forEach var="a" items="${autores}">
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="autores" value="${a.id}">
+                            <label class="form-check-label">
+                                ${a.nome}
+                            </label>
+                        </div>
+                     </c:forEach> 
+                </div>
                 <button type="submit" class="btn btn-success">Salvar</button>
             </form>
         </div>
